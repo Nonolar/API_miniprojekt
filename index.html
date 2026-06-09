@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api miniprojekt</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main class="app-shell">
+        <div class="app-card">
+            <header class="app-header">
+                <div>
+                    <p class="eyebrow">Wikiquote challenge</p>
+                    <h1>Guess the quote</h1>
+                </div>
+                <p class="subtitle">Search for the speaker, pick the best match, then lock in your answer.</p>
+            </header>
+
+            <div class="quote-card">
+                <p class="section-label">Quote to guess</p>
+                <div class="quote-row">
+                    <p id="qout" class="quote-text"></p>
+                    <img class="clue" id="clue" alt="Picture of clue" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/250px-Question_mark_%28black%29.svg.png">
+                </div>
+                
+                <button id="submit" class="btn btn-primary">Lock in answer</button>
+            </div>
+
+            <div class="controls-card">
+                <div class="ans" id="ansHeader">
+                    <p id="guess">Current guess:</p>
+                    <p id="correct">Answer:</p>
+                    <p id="score">Score: </p>
+                </div>
+                
+            </div>
+
+            <div class="search-card">
+                <button class="btn option" id="btn1">Opt. 1</button>
+                <button class="btn option" id="btn2">Opt. 2</button>
+                <button class="btn option" id="btn3">Opt. 3</button>
+                <button class="btn option" id="btn4">Opt. 4</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
