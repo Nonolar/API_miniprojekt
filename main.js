@@ -192,6 +192,7 @@ const debounce = (callback, wait) => {
 }
 
 score = parseInt(localStorage.getItem("score"));
+if(score == NaN) score = 0;
 document.getElementById('score').innerHTML = `Score: ${score}`;
 
 document.getElementById('submit').addEventListener('click', () => buttonPressed());
